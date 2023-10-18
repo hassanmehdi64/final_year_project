@@ -25,15 +25,15 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('adduser' , function (){
-    User::create([
-        'name' => "name",
-        'email' => "admin@gmail.com",
-        'password' => Hash::make('admin'),
-        'role' => 1,
-        'status' => 1
-    ]);
-});
+// Route::get('adduser' , function (){
+//     User::create([
+//         'name' => "name",
+//         'email' => "admin@gmail.com",
+//         'password' => Hash::make('admin'),
+//         'role' => 1,
+//         'status' => 1
+//     ]);
+// });
 
 Route::get('/', [HostelsViewController::class, 'index']);
 Route::get('/about', [HostelsViewController::class, 'about']);
